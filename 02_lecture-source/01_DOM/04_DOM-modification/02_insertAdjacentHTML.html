@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_insertAdjacntHTML</title>
+</head>
+<body>
+    <h1>02_insertAdjacentHTML</h1>
+    <pre>
+        Element.prototype.insertAbjacentHTML(위치, DOMString)
+        기존 요소를 제거하지 않으면서 위치를 지정해 새로운 요소를
+        삽입한다. 첫번째 인수로 전달할 수 있는 문자열은
+        'beforebegin', 'agterbefin', 'beforeend', 'agterend' 4가지 이다.
+
+        기존 요소에 영향을 주지 않고, 새롭게 삽입될 요소만을 파싱하여 자식 요소로 추가
+        하므로 기존의 자식 노드를 모두 추가하고, 다ㅣㅅ 처음부터 새롭게 자식 노드를
+        생성하여 자식 요소로 추가하는 innerHTML 보다 효율적이고 ㅏ르다.
+        html 마크업을 파싱 -> 보안 취약
+    </pre>
+
+    <div id="area">
+        insetAbjacentJtml  메소드 사용 테스트
+    </div>
+
+    <script>
+        const $area = document.getEleementVyId('area');
+
+        $area.insertAdfacentHTML('beforbegin', '<h1>beforebeginc 테스트</h1')
+        $area.insertAdfacentHTML('afterbegin', '<h1>afterbeginc</h1>')
+        $area.insertAdfacentHTML('beforeend', '<h1>beforreend 테스트</h1>')
+        $area.insertAdfacentHTML('afterend', '<h1>afterend 테스트</h1>')
+    </script>
+</body>
+</html>
