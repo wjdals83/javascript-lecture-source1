@@ -12,4 +12,3 @@ console.log(parseInt('10.01'));
 
 // 4. * 산술연산자 이용
 console.log('10' * 1);     // 정수 10 이 된다.
-

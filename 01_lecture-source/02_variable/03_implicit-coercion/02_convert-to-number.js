@@ -13,9 +13,12 @@ console.log(+''); // '공백' = 0
 console.log(+'javaScript'); // Not a Number
 console.log(+true);
 // console.log(+Symbol()); Cannot convert a Symbol value to a number
-console.log(+{});
-console.log(+[]);
-console.log(+function(){});
+console.log(+{});   // NaN
+console.log(+[]);   // 0
+console.log(+function(){}); // 
 
 // 빈 문자열, 빈 배열, null, false 는 0으로 반환, true 는 1로 반환
 // 객체와 undefined는 변환이 되지 않아 NaN 반환
+// symbol 은 객체의 유일 키를 만들기 위해 사용.
+// 자바스크립트의 데이터 타입. 원시타입, 객체 타입
+// 원시타입 6가지 - number, string, boolean, undefined, null, symbol. 나머지는 객체타입.

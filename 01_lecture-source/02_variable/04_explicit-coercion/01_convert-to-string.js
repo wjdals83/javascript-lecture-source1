@@ -15,3 +15,5 @@ console.log(String(true));  //"true"
 
 // 2. toString 메서드 사용 (Object.prototype.toString)
 console.log((10).toString());
+
+

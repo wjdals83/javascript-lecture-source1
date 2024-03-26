@@ -26,4 +26,4 @@ console.log(`Number.isNaN(NaN) : ${Number.isNaN(NaN)}`);
 
 console.log(`'hello' === 'hello' : ${'hello' === 'hello'}`);
 
-
+// NaN 자신과 일치하지 않음. ==, === 모두
