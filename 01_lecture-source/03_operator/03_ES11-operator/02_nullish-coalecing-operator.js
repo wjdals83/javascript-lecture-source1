@@ -6,8 +6,9 @@
 */
 
 // ?? : 좌변의 피연산자가 null undefined 일 떄 우변 반환.
-var test = null ?? '기본값';
+var test = null ?? '기본값';    // 우항 값인 기본값 반환
 console.log(test);
 
-var value = '' ?? '기본값';
+var value = '' ?? '기본값';     // 좌항 값인 ''공백 반환
 console.log(value);
+
