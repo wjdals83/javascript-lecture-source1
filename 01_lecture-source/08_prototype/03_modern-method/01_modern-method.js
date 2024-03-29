@@ -1,4 +1,4 @@
-// Object.create(proto) : [[Prototype]] 이 proto 를 참조하는 빈 객체를 만들어준다. 
+1// Object.create(proto) : [[Prototype]] 이 proto 를 참조하는 빈 객체를 만들어준다. 
 
 const user = {
     activate : true
